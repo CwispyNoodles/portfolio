@@ -1,10 +1,8 @@
-import Navbar from "../components/Navbar";
-
+import Header from "../components/Header";
 function Resume(){
     return(
         <>
-            <h1>Resume</h1>
-            <Navbar></Navbar>
+            <Header title="Resume"></Header>
         </>
     );
 }

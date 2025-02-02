@@ -1,10 +1,9 @@
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 function Projects(){
     return(
         <>
-            <h1>Projects</h1>
-            <Navbar></Navbar>
+            <Header title="Projects"></Header>
         </>
     );
 }

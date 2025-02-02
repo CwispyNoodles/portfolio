@@ -1,10 +1,9 @@
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 function About(){
     return(
         <> 
-            <h1>About Page</h1>
-            <Navbar></Navbar>
+            <Header title="About Me"></Header>
         </>
     );
 }
