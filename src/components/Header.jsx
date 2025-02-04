@@ -5,7 +5,7 @@ function Header(props){
     const title = props.title;
 
     return(
-        <header>
+        <header className="header">
             <h1>{title}</h1>
             <Navbar></Navbar>
         </header>
