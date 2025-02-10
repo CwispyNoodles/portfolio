@@ -1,123 +1,175 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.section{
+  display: grid;
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
-.header{
-  text-align: center;
-}
-
-.navbar{
-  background-color: hsl(0, 0%, 50%);
-  justify-content: center;
-  display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.link{
-  padding-right: 10px;
-  font-size: 1.5em;
-}
-
-.test{
-  background-color: gray;
-  width: 65%;
-  padding: 25px;
-  margin: auto;
-}
-
-.a{
-  display: flex;
-  flex-direction: row;
-}
-
-.b{
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  background-color: #363636;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-}
-
-.c{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.d{
-  background-color: #d1d1d1;
+.overlay{
+  grid-area: 1/1;
+  background-color: hsl(0, 0%, 27%);;
   height: 75vh;
 }
 
-.e{
-  background-color: #e3e4d4;
-  height: 50vh;
+.hero{
+  background-color: #910118;
+  height: 75vh;
+  border-radius: 0px 0px 0px 100px;
+  padding: 50px;
+  grid-area: 1/1;
 }
 
-.hero{
-  background-color: #d1d1d1;
+.navbar{
   height: 100vh;
+  position: sticky;
+  top: 0px;
+  background-color: hsl(0, 0%, 20%);
 }
 
 body{
-  margin:0; 
-  padding:0; 
+  margin: 0px;
 }
 
-.sidebar{
-  color: white;
-  background-color: gray;
-}
-
-.menu-bar{
-  height: 88vh;
-  margin-top: 2rem;
+.content{
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  font-size: 1rem;
-  background-color: gray;
-  position: relative;
+  width: 100%;
+  background-color: #D1D1D1;
+}
+
+.menulist{
+  background-color: hsl(0, 0%, 20%);
+}
+
+.section-bg{
+  height: 50vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 9998;
+}
+
+.aboutme{
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+  grid-area: 1/1;
+}
+
+.aboutme-1-1{
+  width: 50%;
+  background-color: hsl(0, 0%, 27%);
+  border-radius: 0px 100px 100px 100px;
+  padding: 50px;
+  position:relative;
+}
+
+.aboutme-1-2{
+  width: 50%;
+  background-color: #FFFBE8;
+  border-radius: 100px 100px 100px 0px;
+  padding: 50px;
+}
+
+.aboutme-2-1{
+  width: 50%;
+  background-color: #FFFBE8;
+  border-radius: 100px 0px 100px 100px;
+  padding: 50px;
+}
+
+.aboutme-2-2{
+  width: 50%;
+  background-color: hsl(0, 0%, 27%);
+  border-radius: 100px 100px 0px 100px;
+  padding: 50px;
+}
+
+.aboutme-overlay{
+  grid-area: 1/1;
+  height: 75vh;
+  display: flex;
+}
+
+.aboutme-overlay-filler{
+  width: 25%;
+  height: 75vh;
+}
+.aboutme-overlay-1-2{
+  width: 25%;
+  height: 75vh;
+  background-color: #FFFBE8;
+  border-radius: 0px 100px 0px 100px;
+}
+
+.aboutme-overlay-1-4{
+  width: 25%;
+  height: 75vh;
+  background-color: #910118;
+  border-radius: 100px 0px 100px 0px;
+}
+
+.aboutme-overlay-2-3{
+  width: 25%;
+  height: 75vh;
+  background-color: #FFFBE8;
+  border-radius: 0px 100px 0px 100px;
+}
+
+.aboutme-header{
+  font-family: "Gothic A1", serif;
+  font-weight: 900;
+  color: #FFFBE8;
+  font-style: normal;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 6em;
+  position: absolute;
+  text-align: center;
+  right: 0;
+
+}
+
+.aboutme-section{
+  font-family: "Teko", serif;
+  color: #FFFBE8;
+  font-size: 15em;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 1;
+}
+
+.aboutme-header-colorcode{
+  font-family: 'Agency FB', sans-serif;
+  color: #FFFBE8;
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 0;
+  right: 0.2;
+  text-decoration: underline;
+}
+
+.name-korean{
+  font-family: "Gothic A1", serif;
+  font-weight: 900;
+  color: #FFFBE8;
+  font-style: normal;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 15em;
+  text-align: center;
+  margin: 0;
+}
+
+
+.hero-section{
+  font-family: "Teko", serif;
+  color: #FFFBE8;
+  font-size: 15em;
+  margin: 0;
 }

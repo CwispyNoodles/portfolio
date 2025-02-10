@@ -6,68 +6,64 @@ import {Button} from 'antd'
 import { useState } from 'react';
 import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons'
 
-const {Header, Sider} = Layout;
+const {Header, Sider, Content} = Layout;
 
 function Home(){
-    const [collapsed, setCollapsed] = useState(true);
     return(
         <Layout>
-            <Sider className="sidebar" collapsed={collapsed} collapsible trigger={null}>
-                Sidebar
-                <MenuList></MenuList>
+            <Sider collapsed={false} collapsible trigger={null} className='navbar'>
+                <MenuList/>
             </Sider>
-            <Layout>
-                <Button type='text' className='toggle' onClick={()=>setCollapsed(!collapsed)} icon={collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}>
-                </Button>
-            </Layout>
+            <div className='content'>
+                <div className='section'>
+                    <div className='overlay'>
+                    </div>
+                    <div className='hero'>
+                        <div>
+                            <p className='name-korean'>구범찬</p>
+                            <p className='hero-section'>01</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='section'>
+                    <div className='aboutme-overlay'>
+                        <div className='aboutme-overlay-filler'/>
+                        <div className='aboutme-overlay-1-2'/>
+                        <div className='aboutme-overlay-filler'/>
+                        <div className='aboutme-overlay-1-4'/>
+                    </div>
+                    <div className='aboutme'>
+                        <div className='aboutme-1-1'>
+                            <p className='aboutme-section'>02-1</p>
+                            <p className='aboutme-header'>ABOUT ME</p>
+                            <p className='aboutme-header-colorcode'>#464646</p>
+                            
+                        </div>
+                        <div className='aboutme-1-2'>
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, vitae! Beatae ipsum nostrum laborum in, doloribus ad, explicabo et officiis totam labore eos? Cumque hic odit, facilis laborum labore atque.</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='section'>
+                    <div className='aboutme-overlay'>
+                        <div className='aboutme-overlay-filler'/>
+                        <div className='aboutme-overlay-filler'/>
+                        <div className='aboutme-overlay-2-3'/>
+                        <div className='aboutme-overlay-filler'/>
+                    </div>
+                    <div className='aboutme'>
+                        <div className='aboutme-2-1'>
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, vitae! Beatae ipsum nostrum laborum in, doloribus ad, explicabo et officiis totam labore eos? Cumque hic odit, facilis laborum labore atque.</h1>
+                        </div>
+                        <div className='aboutme-2-2'>
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, vitae! Beatae ipsum nostrum laborum in, doloribus ad, explicabo et officiis totam labore eos? Cumque hic odit, facilis laborum labore atque.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </Layout>
-        // <>
-        //     <Header title="Home"></Header>
-        //     <div className="test">
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-
-        //         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis ea, at nulla neque nesciunt magnam corrupti quaerat dolorum numquam esse doloribus aspernatur velit a provident quod error ipsa asperiores.</p>
-        //     </div>
-        // </>
-        
-        // <div className="a"> 
-        //     <div className="b">
-        //         <p>1</p>
-        //         <p>2</p>
-        //         <p>3</p>
-        //         <p>4</p>
-        //         <p>5</p>
-        //     </div>     
-        //     <div className="c">
-        //         <div className="hero">
-        //             <p>1</p>
-        //             <p>2</p>
-        //             <p>3</p>
-        //             <p>4</p>
-        //             <p>5</p>                            
-        //         </div>
-        //         <div className="e">
-        //             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum, tempore sit voluptates ullam aliquam molestiae a nemo libero veritatis rerum quia molestias quisquam eum amet repellendus ipsa expedita impedit?</p>
-        //         </div>  
-        //         <div className="d">
-        //             <p>1</p>
-        //             <p>2</p>
-        //             <p>3</p>
-        //             <p>4</p>
-        //             <p>5</p>                            
-        //         </div>   
-        //         <div className="e">
-        //             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum, tempore sit voluptates ullam aliquam molestiae a nemo libero veritatis rerum quia molestias quisquam eum amet repellendus ipsa expedita impedit?</p>
-        //         </div>           
-        //     </div>    
-        // </div>
-
-        
     );
 }
 

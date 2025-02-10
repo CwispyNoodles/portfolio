@@ -1,15 +1,17 @@
 import { Menu } from 'antd';
 import {HomeOutlined} from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 function MenuList(){
     return(
-        <Menu mode='inline' className='menu-bar'>
+        <Menu className='menulist'>
             <Menu.Item key="Home" icon={<HomeOutlined/>}>
                 Home
             </Menu.Item>
             <Menu.Item key="Resume" icon={<HomeOutlined/>}>
-                Resume
-            </Menu.Item>
+                <Link to="/About">Resume</Link>
+            </Menu.Item>  
+            
             <Menu.Item key="Contact" icon={<HomeOutlined/>}>
                 Contact
             </Menu.Item>
