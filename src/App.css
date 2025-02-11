@@ -3,20 +3,6 @@
   
 }
 
-.overlay{
-  grid-area: 1/1;
-  background-color: hsl(0, 0%, 27%);;
-  height: 75vh;
-}
-
-.hero{
-  background-color: #910118;
-  height: 75vh;
-  border-radius: 0px 0px 0px 100px;
-  padding: 50px;
-  grid-area: 1/1;
-}
-
 .navbar{
   height: 100vh;
   position: sticky;
@@ -152,24 +138,4 @@ body{
   bottom: 0;
   right: 0.2;
   text-decoration: underline;
-}
-
-.name-korean{
-  font-family: "Gothic A1", serif;
-  font-weight: 900;
-  color: #FFFBE8;
-  font-style: normal;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 15em;
-  text-align: center;
-  margin: 0;
-}
-
-
-.hero-section{
-  font-family: "Teko", serif;
-  color: #FFFBE8;
-  font-size: 15em;
-  margin: 0;
 }

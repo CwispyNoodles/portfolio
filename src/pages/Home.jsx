@@ -1,10 +1,6 @@
-// import Header from "../components/Header";
-
 import {Layout} from 'antd';
 import MenuList from '../components/MenuList';
-import {Button} from 'antd'
-import { useState } from 'react';
-import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons'
+import Hero from '../components/Hero';
 
 const {Header, Sider, Content} = Layout;
 
@@ -15,16 +11,7 @@ function Home(){
                 <MenuList/>
             </Sider>
             <div className='content'>
-                <div className='section'>
-                    <div className='overlay'>
-                    </div>
-                    <div className='hero'>
-                        <div>
-                            <p className='name-korean'>구범찬</p>
-                            <p className='hero-section'>01</p>
-                        </div>
-                    </div>
-                </div>
+                <Hero/>
 
                 <div className='section'>
                     <div className='aboutme-overlay'>

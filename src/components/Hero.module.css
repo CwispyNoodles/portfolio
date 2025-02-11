@@ -1,0 +1,41 @@
+.heroSection{
+    display: grid;
+}
+
+.heroBackground{
+    grid-area: 1/1;
+    background-color: hsl(0, 0%, 27%);;
+    height: 80vh;
+}
+
+.heroContent{
+    background-color: #910118;
+    height: 80vh;
+    border-radius: 0px 0px 0px 100px;
+    padding: 50px;
+    grid-area: 1/1;
+}
+
+.heroLeftText{
+    display: flex;
+    flex-direction: column;
+}
+
+.heroNameKorean{
+    font-family: "Gothic A1", serif;
+    font-weight: 900;
+    color: #FFFBE8;
+    font-style: normal;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 15em;
+    text-align: center;
+    margin: 0;
+}
+
+.heroSectionNum{
+    font-family: "Teko", serif;
+    color: #FFFBE8;
+    font-size: 15em;
+    margin: 0;
+}

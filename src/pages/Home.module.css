@@ -1,0 +1,7 @@
+.hometest{
+    background-color: #019123;
+    height: 80vh;
+    border-radius: 0px 0px 0px 100px;
+    padding: 50px;
+    grid-area: 1/1;
+}
