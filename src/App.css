@@ -45,15 +45,15 @@ body{
 }
 
 .aboutme-1-1{
-  width: 50%;
+  width: 35%;
   background-color: hsl(0, 0%, 27%);
   border-radius: 0px 100px 100px 100px;
   padding: 50px;
-  position:relative;
+  position: relative;
 }
 
 .aboutme-1-2{
-  width: 50%;
+  width: 65%;
   background-color: #FFFBE8;
   border-radius: 100px 100px 100px 0px;
   padding: 50px;
@@ -136,6 +136,5 @@ body{
   justify-content: end;
   position: absolute;
   bottom: 0;
-  right: 0.2;
   text-decoration: underline;
 }

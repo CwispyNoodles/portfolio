@@ -14,6 +14,8 @@
     border-radius: 0px 0px 0px 100px;
     padding: 50px;
     grid-area: 1/1;
+    width: 100%;
+    position: relative;
 }
 
 .heroLeftText{
@@ -37,5 +39,39 @@
     font-family: "Teko", serif;
     color: #FFFBE8;
     font-size: 15em;
-    margin: 0;
+    margin: 50px;
+    bottom: 0;
+    left: 0;
+}
+
+.heroColorCode{
+    font-family: 'Agency FB', sans-serif;
+    color: #FFFBE8;
+    font-size: 3rem;
+    margin: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: underline;
+}
+
+.bottomArrow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 50px;
+}
+
+.heroNameEnglish{
+    font-family: "Gothic A1", serif;
+    font-weight: 900;
+    color: #FFFBE8;
+    font-style: normal;
+    font-size: 5em;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%);
+    text-align: end;
 }
