@@ -2,7 +2,6 @@ import styles from './Hero.module.css'
 import { Canvas, useFrame} from '@react-three/fiber';
 import { useRef } from 'react';
 import { FirstPersonControls, OrbitControls, GizmoHelper, GizmoViewcube, GizmoViewport } from '@react-three/drei'
-import { useControls } from 'leva';
 
 
 function AnimatedBox() {
