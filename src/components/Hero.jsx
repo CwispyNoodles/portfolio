@@ -1,6 +1,9 @@
 import styles from './Hero.module.css'
 import { Canvas, useFrame} from '@react-three/fiber';
 import { useRef } from 'react';
+import { FirstPersonControls, OrbitControls, GizmoHelper, GizmoViewcube, GizmoViewport } from '@react-three/drei'
+import { useControls } from 'leva';
+
 
 function AnimatedBox() {
     const boxRef = useRef();
@@ -13,6 +16,7 @@ function AnimatedBox() {
     return(
         <mesh ref={boxRef}>
             <boxGeometry args={[2,2,2]}/>
+            <axesHelper args={[10]}/>
             <meshStandardMaterial color={0x00bfff}/>
         </mesh>
     );
@@ -20,24 +24,17 @@ function AnimatedBox() {
 
 function Hero() {
     return(
-        // <div className={styles.heroSection}>
-        //     <div className={styles.heroBackground}/>
-        //     <div className={styles.heroContent}>
-        //         <div className={styles.heroLeftText}>
-        //             <p className={styles.heroNameKorean}>구범찬</p>
-        //             <p className={styles.heroSectionNum}>01</p>
-        //         </div>
-        //         <p className={styles.heroColorCode}>#920017</p>
-        //         <img src={bottomArrow} width={150} height={150} className={styles.bottomArrow}/>
-        //         <p className={styles.heroNameEnglish}>BUM CHAN KOO</p>
-        //     </div>
-        // </div>
         <div id='canvas-container'>
             <Canvas >
-                <mesh position={[-2, 2, -1]} rotation={[0,0,Math.PI]} scale={[2,0.5, 2]}>
-                    <AnimatedBox/>
-                    <directionalLight position={[2,5,1]}/>
-                </mesh>
+                <GizmoHelper alignment='bottom-right' margin={[80,80]}>
+                    <GizmoViewcube/>
+                </GizmoHelper>
+                {/* <FirstPersonControls movementSpeed={3}/> */}
+                <gridHelper args={[20, 20, 0xff22aa, 0x55ccff]}/>
+                <axesHelper args={[10]}/>
+                <OrbitControls/>
+                <AnimatedBox/>
+                <directionalLight position={[2,5,1]}/>
             
             </Canvas>
         </div>
